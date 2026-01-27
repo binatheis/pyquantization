@@ -1,0 +1,36 @@
+[build-system]
+requires = ["scikit-build-core>=0.10", "pybind11>=2.13"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "pyquantization"
+version = "0.1.0"
+description = "Python bindings for quad mesh quantization without a T-mesh (Coudert-Osmont et al., 2024)"
+readme = "README.md"
+license = {text = "AGPL-3.0-or-later"}
+authors = [
+    {name = "Yoann Coudert-Osmont", email = "yoann.coudert-osmont@univ-lorraine.fr"},
+    {name = "Mattias Fagerlund"}
+]
+keywords = [
+    "mesh", "quantization", "quad-mesh", "parameterization", "geometry-processing"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: C++",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Multimedia :: Graphics :: 3D Modeling"
+]
+requires-python = ">=3.9"
+dependencies = ["numpy"]
+
+[project.urls]
+Repository = "https://github.com/mfagerlund/pyquantization"
+"Original Paper" = "https://inria.hal.science/hal-04571380"
+
+[tool.scikit-build]
+wheel.expand-macos-universal-tags = true
