@@ -34,3 +34,6 @@ Repository = "https://github.com/mfagerlund/pyquantization"
 
 [tool.scikit-build]
 wheel.expand-macos-universal-tags = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
