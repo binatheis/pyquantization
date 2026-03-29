@@ -44,9 +44,23 @@ out_verts, out_faces, out_uvs, out_uv_tris, out_feats = pyquantization.quantize_
 
 ## Reference
 
-Coudert-Osmont, Y., Desobry, D., Livesu, M., Sorkine-Hornung, O., Bommes, D., Levy, B., Ray, N. (2024). "Quad Mesh Quantization Without a T-Mesh." *Computer Graphics Forum*.
+Coudert-Osmont, Y., Desobry, D., Heistermann, M., Bommes, D., Ray, N., Sokolov, D. (2024). "Quad Mesh Quantization Without a T-Mesh." *Computer Graphics Forum*.
 
 Original C++ code from [etcorman/RectangularSurfaceParameterization](https://github.com/etcorman/RectangularSurfaceParameterization/tree/main/QuantizationYoann).
+
+If you use this in scientific work, please cite:
+
+```bibtex
+@inproceedings{coudert2024quad,
+  title={Quad Mesh Quantization Without a T-Mesh},
+  author={Coudert-Osmont, Yoann and Desobry, David and Heistermann, Martin
+          and Bommes, David and Ray, Nicolas and Sokolov, Dmitry},
+  booktitle={Computer Graphics Forum},
+  volume={43},
+  number={1},
+  year={2024}
+}
+```
 
 ## License
 
