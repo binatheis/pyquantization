@@ -20,7 +20,6 @@ target_include_directories(pyquantization PRIVATE src)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
     target_compile_options(pyquantization PRIVATE -Wall -Wextra -fdiagnostics-color)
-    set_source_files_properties(src/refine/cgls.cpp PROPERTIES COMPILE_FLAGS -march=native)
 endif()
 
 if(MSVC)
